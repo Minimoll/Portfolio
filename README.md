@@ -1,10 +1,10 @@
 # Personal Portfolio
 
-This is a personal portfolio project showcasing my skills in AI and software development. The portfolio highlights my experience, skills, and projects. It also provides a way for potential employers and collaborators to get in touch with me.
+This is a personal portfolio project showcasing my skills in AI and software development. The portfolio highlights my experience, skills, and projects.
 
 ## Features
 
-- Responsive design for various screen sizes
+- Responsive design for various screen sizes (computer and mobile)
 - Interactive navigation menu
 - Tabs for displaying different sections (Skills, Experience, Education)
 - Links to GitHub profile and social media
@@ -32,3 +32,5 @@ To run this project locally, follow these steps:
 1. **Clone the repository**: git clone https://github.com/Minimoll/Portfolio.git
 2. Navigate to the project directory: cd Portfolio
 3. Open 'index.html' in your web browser: open index.html
+
+Have a good day!
