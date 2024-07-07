@@ -1,125 +1,96 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Personal Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/f353e4cdd4.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <img class="logo" src="images/logo-Photoroom.png">
-                    <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <i class="fas fa-times" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fas fa-bars" onclick="openmenu()"></i>
-                </nav>
-                <div class="header-text">
-                    <p>AI/Software Developer</p>
-                    <h1>Hi, I'm <span>Joakim</span><br>From Sweden</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/f353e4cdd4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="images/logo-Photoroom.png" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text" data-aos="fade-up">
+                <p>AI/Software Developer</p>
+                <h1>Hi, I'm <span>Joakim</span><br>From Sweden</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" data-aos="fade-right">
+        <div class="container">
+            <h1 class="sub-title">About Me</h1>
+            <p>I study computer science at Jönköping University.</p>
+        </div>
+    </div>
+
+    <div id="portfolio" data-aos="fade-left">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work github-link">
+                    <a href="https://github.com/Minimoll" target="_blank">
+                        <i class="fab fa-github fa-3x"></i>
+                        <p class="work-text">Check out my GitHub</p>
+                    </a>
                 </div>
             </div>
         </div>
-        <!--About-->
-        <div id="about">
-            <div class="container">
-                <div class="about-col-1">
-                    <h1 class="sub-title">About Me</h1>
-                    <p class="sub-title-col-1">I study computer science at Jönköping University</p>
+    </div>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+    <div id="contact" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>mojo21ti@student.ju.se</p>
+                    <p><i class="fa-solid fa-phone"></i>+46761085526</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/joakim.moll/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/joakimmoll/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>AI projects</span><br>Soon to come</li>
-                            <li><span>Programming</span><br>C<br>C#<br>Python<br>Haskell<br>HTML/CSS<br>JavaScript<br>SQL<br>VHDL</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2018-2022</span><br>TeamLeader at Aditro Logistics</li>
-                            <li><span>2016-2018</span><br>Aditro Logistics</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2022-Current</span><br>Computer Science at Jönköping University</li>
-                        </ul>
-                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
                 </div>
             </div>
         </div>
-        <div id="portfolio">
-            <div class="container">
-                <h1 class="sub-title">My Work</h1>
-                <div class="work-list">
-                    <div class="work github-link">
-                        <a href="https://github.com/Minimoll" target="_blank">
-                            <i class="fab fa-github fa-3x"></i>
-                            <p class="work-text">Check out my GitHub</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-title">Contact Me</h1>
-                        <p><i class="fa-regular fa-envelope"></i>mojo21ti@student.ju.se</p>
-                        <p><i class="fa-solid fa-phone"></i>+46761085526</p>
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com/joakim.moll/"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/joakimmoll/"><i class="fa-brands fa-instagram"></i></a>
-                        </div>
-                        <a href="" class="btn btn2">Download CV</a>
-                    </div>
-                    <div class="contact-right">
-                        <form action=""></form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
+    </div>
 
-            function opentab(tabname) {
-                for(tablink of tablinks) {
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents) {
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
-            }
-        </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            delay: 0,
+            duration: 400,
+            easing: 'ease',
+            once: true,
+            mirror: false,
+            anchorPlacement: 'top-bottom',
+        });
+    </script>
 
-        <script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
 
-            var sidemenu = document.getElementById("sidemenu");
-
-            function openmenu(){
-                sidemenu.style.right = "0";
-            }
-            function closemenu(){
-                sidemenu.style.right = "-200px";
-            }
-
-        </script>
-    </body>
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
 </html>
